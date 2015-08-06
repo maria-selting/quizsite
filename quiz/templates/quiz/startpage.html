@@ -19,11 +19,10 @@
 		<p> This page was created by the true 80´s fan Maria Selting who wanted to share her passion with other enthusiasts all over the world. There is one test for every category the 80´s has to offer. Check your own 80 ´s knowledge by taking the tests below!   
 		</p>
 		<br>
-		<li> <a   href="file:///Users/marsel/Desktop/Projects/quiz-templates/start-page-movies-quiz.html"> Movies </a> </li>
-		<li> Great musicians </li>
-		<li> Disco music </li>
-		<li> Fashion </li>
-		<li> True or false </li>
+		{% for quiz_slug, quiz in quizzes.items %}
+			<p>{{quiz.name}}</p>
+		{% endfor %}
+	
 		</p> 
 
 	 		</p>
