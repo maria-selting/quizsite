@@ -63,7 +63,7 @@ input[type=radio] {
 }
 
 
-input[type=submit] {padding:5px 15px; background:#fff; border: 1 none;
+input[type=submit] {padding:5px 15px; background:#82FA58; border: 0 none;
 cursor:pointer;
 -webkit-border-radius: 5px;
 border-radius: 5px;
@@ -76,8 +76,26 @@ header {
 	display: block;
 	max-width: 1200px;
 	margin: 0 auto;
-	
-
 }
 
+a, u {
+	text-decoration: none;
+	color: #354947;
+}
 
+.sidebar {
+	width: 50px;
+	height: 30px;
+	background-color: #ffffff;
+	float: left;
+	margin: 0 auto; 
+	padding-left: 120px;
+}
+
+.text {
+	background: #ffffff;
+	width: 600px;
+	display: block;
+	max-width: 600px;
+	margin: 0 auto;
+}

@@ -12,6 +12,7 @@
 	</header>
 	<body> 
 		<br>
+		<div class="text">
 		<H1 class="headings"> Quizzes from the 80´s </H1>
 		<br>
 		<h2 class="headings"> One quiz for every 80´s maniac </h2>
@@ -21,11 +22,12 @@
 		<br>
 		{% for quiz_slug, quiz in quizzes.items %}
 			<p><a href="{% url "quiz_page" quiz_slug %}">
-				{{ quiz.name }}
+				<li> {{ quiz.name }} </li>
 			</a></p>
 		{% endfor %}
+		</div)
 	
-		</p> 
+		</p>   
 
 	 		</p>
 
