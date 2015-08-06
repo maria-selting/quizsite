@@ -11,4 +11,4 @@ def question(request):
 	return render(request, "quiz/question.html")
 
 def completed(request):
-	return render(request, "quiz/question.html")
+	return render(request, "quiz/completed.html")
