@@ -6,7 +6,7 @@ img {
 
 }
 body {
-	background: #bafffa;
+	background: #ffffff;
 	font: 12pt/1.4 "Helvetica Neue", "Helvetica", serif;
 
 }
@@ -34,7 +34,7 @@ form {
 }
 
 h1 {
-	font: 42pt/1.4 "Helvetica Neue", "Helvetica", serif;
+	font: 34pt/1.4 "Courier New", Courier, monospace;
 	color: #354947; 
 	margin: 0 auto;
 	width: 600px;
@@ -71,11 +71,11 @@ display: block;
 } 
 
 header {
-	background: #bafffa;
-	width: 600px;
+	background: #ffffff;
+	width: 1200px;
 	display: block;
-	margin-left: none;
-	margin-right: auto;
+	max-width: 1200px;
+	margin: 0 auto;
 	
 
 }

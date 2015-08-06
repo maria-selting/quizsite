@@ -7,11 +7,15 @@
 		<link rel="stylesheet" href="/static/format-quiz.css">
 	</head>
 	<body> 
-		<img src="/static/et.jpg" alt="80´s Quiz" style="width:600px;height:100;"auto>
-		<H1 class="headings"> {{quiz.name}} </H1>
+		<img src="/static/80s-header.jpg" alt="80´s Quiz" style="width:1200px;height:100;"auto>
+		<br>
+		<H1 class="headings"> {{quiz.name}} </H1>                                
+			<br>
 			<p> {{quiz.description}}   
 		 	</p>
+		 	<br>
 		 	<p><a href="{% url "question_page" quiz_slug 1 %}">Start</a></p>
+		
 
 	</body>
 
