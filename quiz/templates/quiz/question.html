@@ -13,15 +13,23 @@
 		<h2 class="headings"> {{ question_number }}. {{ question }} </h2>
 		<br>
 			<p> 
-				<form>
-				<input type="radio" name="Flashdance" value="Breakfast club"> {{ answer1 }} 
+				<form action="{% url "question_page" quiz.slug question_number%}" method="post">
+				{% csrf_token %}
+				<label>
+				<input type="radio" name="answer" value="1"> {{ answer1 }}
+				</label> 
 				<br>
-				<input type="radio" name="Flashdance" value="Flashdance"> {{ answer2 }}
+				<label>
+				<input type="radio" name="answer" value="2"> {{ answer2 }}
+				</label>
 				<br>
-				<input type="radio" name="Flashdance" value="Top Gun"> {{ answer3 }}
+				<label>
+				<input type="radio" name="answer" value="3"> {{ answer3 }}
+				</label>
+				<br>
+				<button type="submit">Next</button>
+				<br>
 				</form>
-				<br>
-				<a href="{% url "question_page" quiz.slug question_number|add:1 %}"><input type="submit" value="Next"></a>
      
 			</p>
 

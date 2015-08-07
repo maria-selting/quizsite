@@ -63,6 +63,13 @@ input[type=radio] {
 }
 
 
+button[type=submit] {padding:5px 15px; background:#82FA58; border: 0 none;
+cursor:pointer;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+display: block;
+} 
+
 input[type=submit] {padding:5px 15px; background:#82FA58; border: 0 none;
 cursor:pointer;
 -webkit-border-radius: 5px;
@@ -75,7 +82,7 @@ header {
 	width: 1200px;
 	display: block;
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: 0 auto; 
 }
 
 a, u {
