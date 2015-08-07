@@ -21,7 +21,7 @@
 				<input type="radio" name="Flashdance" value="Top Gun"> {{ answer3 }}
 				</form>
 				<br>
-				<a href="{% url "completed_page" quiz_slug %}"><input type="submit" value="Next"></a>
+				<a href="{% url "question_page" quiz.slug question_number|add:1 %}"><input type="submit" value="Next"></a>
      
 			</p>
 
