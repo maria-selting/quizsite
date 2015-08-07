@@ -24,7 +24,10 @@
 			<p><a href="{% url "quiz_page" quiz.slug %}">
 			<li>{{ quiz.name }} </li>
 			</a></p>
+		{% empty %}
+			<p><em> Oops, there are no quizzes yet! </em></p>
 		{% endfor %}
+
 
 
 		</div)
