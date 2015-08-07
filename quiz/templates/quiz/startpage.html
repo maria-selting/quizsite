@@ -20,11 +20,14 @@
 		<p> This page was created by true 80´s fan who wanted to share her passion with other enthusiasts all over the world. Check your own 80 ´s knowledge by taking the tests below!   
 		</p>
 		<br>
-		{% for quiz_slug, quiz in quizzes.items %}
-			<p><a href="{% url "quiz_page" quiz_slug %}">
-				<li> {{ quiz.name }} </li>
+		{% for quiz in quizzes %}
+			<p><a href="{% url "quiz_page" quiz.slug %}">
+			<li>{{ quiz.name }} </li>
 			</a></p>
 		{% endfor %}
+
+		
+
 		</div)
 	
 		</p>   

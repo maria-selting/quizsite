@@ -2,27 +2,12 @@
 
 from django.shortcuts import render
 
-quizzes={
-	"movies":{
-		"name":u"Movies of the 80´s",
-		"description": "Can you recall what song belongs to what movie?"
-	},
-	"musicians":{
-		"name":u"Musicians",
-		"description":u"How well do you know the great musicians of the 80's?"
-
-	},
-	"fashion":{
-		"name":u"Fashion",
-		"description":u"Do you remember the fashion of the 80´s?"
-
-	},
-}
+from quiz.models import Quiz
 
 # Create your views here.
 def startpage(request):
 	context = {
-		"quizzes":quizzes,
+		"quizzes":Quiz.objects.all(),
 	}
 	return render(request, "quiz/startpage.html", context)
 
