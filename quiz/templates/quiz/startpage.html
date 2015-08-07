@@ -19,7 +19,7 @@
 		<br>
 		<p> This page was created by a true 80´s fan who can´t prevent herself from forcing her love for the decade on everyone else around her. Check your own 80 ´s knowledge by taking the tests below!   
 		</p>
-		<br>
+		<div class="headings"><h3> My quizzes </h3></div>
 		{% for quiz in quizzes %}
 			<p><a href="{% url "quiz_page" quiz.slug %}">
 			<li>{{ quiz.name }} </li>
